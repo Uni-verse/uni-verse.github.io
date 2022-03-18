@@ -2,12 +2,9 @@
   <head></head>
   <body>
     <div id="1" style="padding: 100px; background: #ccc; display: block"></div>
+    <button onclick="displayimportant();">TEST</button>
     
-    <input type="button" value="Enabled">TEST</input>
-    <script type="text/javascript">
-    const button = document.querySelector('input');
-    button.addEventListener('click', displayimportant);
-
+<script type="text/javascript">
     function displayimportant() {
       const el = document.getElementById("1").style.display = "block!important";
     }
